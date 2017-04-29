@@ -22,8 +22,10 @@ module.exports = function(grunt) {
 			grunt.fail.warn('Destination file is missing.', 3);
 		}
 
+		var processedObj=grunt.config.process(this.data.options);
+
 		try {
-			obj = JSON.parse(JSON.stringify(this.data.options));
+			obj = JSON.parse(JSON.stringify(processedObj));
 		} catch (e){
 			grunt.log.error(e);
 			grunt.fail.warn("Error parsing json the data.", 3);

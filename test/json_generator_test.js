@@ -28,11 +28,12 @@ exports.json_generator = {
     done();
   },
   target: function(test) {
-    test.expect(2);
-    var filename = "myConfigFile.json";
-    test.equal(grunt.file.isFile("tmp/myConfigFile.json"), true, "File created");
-    var file = grunt.file.read("tmp/myConfigFile.json");
+    test.expect(3);
+    var filename = "testsTmp/myConfigFile.json";
+    test.equal(grunt.file.isFile(filename), true, "File created");
+    var file = grunt.file.read(filename);
     test.equal(typeof JSON.parse(file), typeof {}, "The file created is a valid JSON");
+    test.equal(JSON.parse(file)['message'], 'This is a test', "Recursive template expansion");
     test.done();
   }
 };

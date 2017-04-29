@@ -28,15 +28,22 @@ module.exports = function(grunt) {
             tests: ['tmp'],
         },
 
+        // values for testing template expansion
+        values: {
+          test: "This is a <%= values.what %>",
+          what: 'test'
+        },
+
         // Configuration to be run (and then tested).
         json_generator: {
             target: {
-                dest: "tmp/myConfigFile.json",
+                dest: "testsTmp/myConfigFile.json",
                 options: {
                     name: "json-generator",
                     version: "0.1.0",
                     description: "Generating json files on the fly really easily.",
-                    keywords: ["json", "grunt", "automate"]
+                    keywords: ["json", "grunt", "automate"],
+                    message: "<%= values.test %>"
                 }
             }
         },
