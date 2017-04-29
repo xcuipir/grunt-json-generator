@@ -1,23 +1,23 @@
 {
   "name": "grunt-json-generator",
   "description": "Write your json files easily.",
-  "version": "0.1.0",
-  "homepage": "https://github.com/Xumeiquer/grunt-json-generator",
-  "author": {
-    "name": "Jaume Martin",
-    "email": "jaumartin@gmail.com"
-  },
+  "version": "0.2.0",
+  "homepage": "https://github.com/xcuipir/grunt-json-generator",
+  "contributors": [
+    "Jaume Martin <jaumartin@gmail.com>",
+    "Schantl Michael (http://home.schantl-lx.at)"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/Xumeiquer/grunt-json-generator.git"
+    "url": "git://github.com/xcuipir/grunt-json-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/Xumeiquer/grunt-json-generator/issues"
+    "url": "https://github.com/xcuipir/grunt-json-generator/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/Xumeiquer/grunt-json-generator/blob/master/LICENSE-MIT"
+      "url": "https://github.com/xcuipir/grunt-json-generator/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
@@ -38,9 +38,7 @@
   },
   "keywords": [
     "json",
-    "generator",
     "grunt",
-    "node",
     "gruntplugin"
   ]
 }
