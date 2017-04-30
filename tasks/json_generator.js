@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 		// Merge task-specific and/or target-specific options with these defaults.
 		var dest, prop, obj;
 		if (this.data.dest){
-			dest = this.data.dest;
+			dest = grunt.config.process(this.data.dest);
 		} else {
 			grunt.fail.warn('Destination file is missing.', 3);
 		}
